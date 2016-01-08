@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C++ Express 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bowling", "Bowling\Bowling.vcproj", "{820346D9-FB2E-4620-A9B1-46579A96D468}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bowling_Test", "Bowling_Test\Bowling_Test.vcproj", "{CB263399-FF51-4FAA-B788-6E7B40357BA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{820346D9-FB2E-4620-A9B1-46579A96D468}.Debug|Win32.ActiveCfg = Debug|Win32
+		{820346D9-FB2E-4620-A9B1-46579A96D468}.Debug|Win32.Build.0 = Debug|Win32
+		{820346D9-FB2E-4620-A9B1-46579A96D468}.Release|Win32.ActiveCfg = Release|Win32
+		{820346D9-FB2E-4620-A9B1-46579A96D468}.Release|Win32.Build.0 = Release|Win32
+		{CB263399-FF51-4FAA-B788-6E7B40357BA1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CB263399-FF51-4FAA-B788-6E7B40357BA1}.Debug|Win32.Build.0 = Debug|Win32
+		{CB263399-FF51-4FAA-B788-6E7B40357BA1}.Release|Win32.ActiveCfg = Release|Win32
+		{CB263399-FF51-4FAA-B788-6E7B40357BA1}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
