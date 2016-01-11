@@ -1,6 +1,7 @@
 #ifndef __BOWLING_H__
 #define __BOWLING_H__
 
+#define PIN_TOTAL 10
 #define FRAME_TOTAL 10
 
 #define BONUS_MAX 3

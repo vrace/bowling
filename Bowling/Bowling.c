@@ -21,7 +21,7 @@ static void award_bonus(struct bowling *bowling, int type)
 	if (bonus)
 	{
 		bonus->remain = type;
-		bonus->current = 10;
+		bonus->current = PIN_TOTAL;
 	}
 }
 
@@ -98,7 +98,7 @@ static int accept_feed(struct bowling *bowling)
 static int validate_feed(struct bowling *bowling, int score)
 {
 	assert(bowling != NULL);
-	return score > 0 && score <= 10 && bowling->frame + score <= 10;
+	return score > 0 && score <= PIN_TOTAL && bowling->frame + score <= PIN_TOTAL;
 }
 
 int bowling_feed(struct bowling *bowling, int score)
@@ -112,7 +112,7 @@ int bowling_feed(struct bowling *bowling, int score)
 
 	if (bowling->frame < 0)
 	{
-		if (score == 10)
+		if (score == PIN_TOTAL)
 		{
 			if (bowling->remain > 0)
 			{
@@ -129,7 +129,7 @@ int bowling_feed(struct bowling *bowling, int score)
 	{
 		int total = bowling->frame + score;
 
-		if (total == 10)
+		if (total == PIN_TOTAL)
 		{
 			if (bowling->remain > 0)
 				award_bonus(bowling, BONUS_SPARE);
